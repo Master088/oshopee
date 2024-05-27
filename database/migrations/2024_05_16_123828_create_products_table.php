@@ -18,7 +18,7 @@ return new class extends Migration {
             $table->integer('quantity');
             $table->longText('description')->nullable();
             $table->boolean('published')->default(0);
-            $table->boolean('inStock')->default(0);
+            $table->boolean('in_stock')->default(0);
             $table->decimal('price', 10, 2);
 
             $table->foreignIdFor(User::class, 'created_by')->nullable();

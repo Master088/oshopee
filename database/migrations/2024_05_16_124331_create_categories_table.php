@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->string('slug');
+            $table->boolean('is_default')->default(0);
             $table->timestamps();
         });
     }

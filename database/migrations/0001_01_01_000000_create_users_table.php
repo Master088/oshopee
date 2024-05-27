@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->string('store_name')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->boolean('isAdmin')->default(0);
+            $table->boolean('is_admin')->default(0);
             $table->string('type');
             $table->rememberToken();
             $table->timestamps();
